@@ -6,10 +6,10 @@ const LayoutStyled = styled.div`
   margin: auto;
 `
 
-function Layout() {
+function Layout({children}) {
   return (
     <LayoutStyled>
-      Layout
+      {children}
     </LayoutStyled>
     
   )

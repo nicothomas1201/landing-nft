@@ -21,4 +21,10 @@ const Button = styled.button`
   }}
 `
 
+export const ButtonWhite = styled(Button)`
+  background: transparent;
+  border-color: var(--white);
+  color: var(--white);
+`
+
 export default Button
