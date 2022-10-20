@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Button from './button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const BannerStyled = styled.div`
   .bg{
@@ -85,7 +86,9 @@ function Banner() {
           <div className='details-text'>
             <h1> Descubra, recopile y venda NFT extraordinarios </h1>
             <p>en el primer y más grande mercado de NFT del mundo</p>
-            <Button>Explorar</Button>
+            <Link  href="/explore">
+              <Button>Explorar</Button>
+            </Link>
           </div>
           <div className='details-image'>
             <Image src="/banner-image-details.png" width="588" height="437" alt="" />
