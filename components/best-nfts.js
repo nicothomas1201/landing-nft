@@ -28,6 +28,8 @@ const BestNftsStyled = styled.div`
       }
 
       .volume{
+        display: flex;
+        align-items: center;
         color: var(--grey);
       }
     }
@@ -49,7 +51,10 @@ function BestNfts({ name, image, volume, price, numberList }) {
         <Image src={image} alt="" width="56"  height="56" />
         <div className='name-volume'>
           <h4 className='name'>{name}</h4>
-          <span className='volume'>{volume}</span>
+          <span className='volume'>
+            <Image src="/eth.svg" alt='' width={14} height={14} />
+            {volume}
+          </span>
         </div>
       </div>
       <h4 className='price'>{price}</h4>

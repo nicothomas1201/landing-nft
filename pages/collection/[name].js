@@ -12,6 +12,7 @@ const CollectionStyled = styled.div`
     display: grid;
     grid-template-columns: minmax(min-content, 24rem) auto;
     grid-template-areas: "filters nfts";
+    gap: 1.25rem;
   }
 
   .nft-card-list{

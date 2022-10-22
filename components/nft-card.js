@@ -39,6 +39,8 @@ const NftCardStyled = styled.div`
       }
 
       .eth{
+        display: flex;
+        align-items: center;
         font: var(--body-16bold);
         color: var(--grey);
       }
@@ -46,12 +48,25 @@ const NftCardStyled = styled.div`
       .before-eth{
         font: var(--body-14regular);
         color: var(--grey);
+        display: flex;
+        align-items: center;
       }
     }
 
     .card-section.end{
       align-items: end;
     }
+  }
+
+  .likes{
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    color: var(--grey);
+    font: var(--body-14regular);
+    padding-inline-end: .5rem;
+    padding-inline-start: .5rem;
+    padding-block-end: .5rem;
   }
 
 `
@@ -67,11 +82,20 @@ function NftCard({image, name, eth, beforeEth, likes, number}) {
         </div>
         <div className='card-section end'>
           <span className='top'>Top Bid</span>
-          <span className='eth'>{eth}</span>
-          <span className='before-eth'>Antes {beforeEth}</span>
+          <span className='eth'>
+            <Image src="/eth.svg" alt='' width={14} height={14} />
+            {eth}
+          </span>
+          <span className='before-eth'>Antes 
+            <Image src="/eth.svg" alt='' width={14} height={14} />
+            {beforeEth}
+          </span>
         </div>
       </div>
-      <span>{likes}</span>
+      <span className='likes'>
+        <Image src="/hearth.svg" alt="" width="13" height="13" />
+        {likes}
+      </span>
     </NftCardStyled>
     
   )
