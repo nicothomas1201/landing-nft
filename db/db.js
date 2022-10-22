@@ -31,6 +31,28 @@ import user6 from '../images-db/collections/user-collections/6.png'
 import user7 from '../images-db/collections/user-collections/7.png'
 import user8 from '../images-db/collections/user-collections/8.png'
 import user9 from '../images-db/collections/user-collections/9.png'
+import banner from '../images-db/collection/cool-cats/banner.png'
+import user from '../images-db/collection/cool-cats/user-big.png'
+import cat1 from '../images-db/collection/cool-cats/1.png'
+import cat2 from '../images-db/collection/cool-cats/2.png'
+import cat3 from '../images-db/collection/cool-cats/3.png'
+import cat4 from '../images-db/collection/cool-cats/4.png'
+import cat5 from '../images-db/collection/cool-cats/5.png'
+import cat6 from '../images-db/collection/cool-cats/6.png'
+import cat7 from '../images-db/collection/cool-cats/7.png'
+import cat8 from '../images-db/collection/cool-cats/8.png'
+import cat9 from '../images-db/collection/cool-cats/9.png'
+import cat10 from '../images-db/collection/cool-cats/10.png'
+import cat11 from '../images-db/collection/cool-cats/11.png'
+import cat12 from '../images-db/collection/cool-cats/12.png'
+import cat13 from '../images-db/collection/cool-cats/13.png'
+import cat14 from '../images-db/collection/cool-cats/14.png'
+import cat15 from '../images-db/collection/cool-cats/15.png'
+import cat16 from '../images-db/collection/cool-cats/16.png'
+import cat17 from '../images-db/collection/cool-cats/17.png'
+import cat18 from '../images-db/collection/cool-cats/18.png'
+import cat19 from '../images-db/collection/cool-cats/19.png'
+import cat20 from '../images-db/collection/cool-cats/20.png'
 
 export const BestNfts = [
   {
@@ -191,3 +213,172 @@ export const Collections = [
   },
 
 ]
+
+export const Collection =  {
+    title: 'Cool Cats NFT',
+    bannerImg: banner,
+    userImg: user,
+    autor: "CoolCatsContract",
+    nfts: [
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat1,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat2,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat3,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat4,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat5,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat6,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat7,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat8,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat9,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat10,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat11,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat12,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat13,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat14,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat15,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat16,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat17,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat18,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat19,
+      },
+      {
+        name: "Cool Cats",
+        number: "#8781",
+        eth: "0.003",
+        before_eth: "0.003",
+        likes: 145,
+        imageUrl: cat20,
+      },
+    ]
+  }

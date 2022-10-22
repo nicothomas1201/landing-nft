@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+import Link from 'next/link'
 
 const CardCollectionStyled = styled.div`
   border: 1px solid #71717133;
@@ -12,6 +12,7 @@ const CardCollectionStyled = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding-block-end: 1rem;
+  cursor: pointer;
 
   .images{
     inline-size: 100%;
@@ -67,18 +68,22 @@ const CardCollectionStyled = styled.div`
 `
 
 function CardCollection({collection, user, title, autor, description}) {
+
   return (
-    <CardCollectionStyled collection={collection} user={user}>
-      <div className='images'>
-        <div className='collection-img'></div>
-        <div className='user-img'></div>
-      </div>
-      <h3 className='title'>{title}</h3>
-      <span className='autor'>Por <span className='active'>{autor}</span></span>
-      <p className='description'>{description}</p>
-    </CardCollectionStyled>
-    
+    <Link href='../collection/Cool Cats NFT'>
+      <CardCollectionStyled collection={collection} user={user}>
+        <div className='images'>
+          <div className='collection-img'></div>
+          <div className='user-img'></div>
+        </div>
+        <h3 className='title'>{title}</h3>
+        <span className='autor'>Por <span className='active'>{autor}</span></span>
+        <p className='description'>{description}</p>
+      </CardCollectionStyled>
+    </Link>
   )
+
+  
 }
 
 export default CardCollection
