@@ -9,10 +9,17 @@ import FilterList from '../../components/filter-list'
 
 const CollectionStyled = styled.div`
   .grid-container{
-    display: grid;
-    grid-template-columns: minmax(min-content, 24rem) auto;
-    grid-template-areas: "filters nfts";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.25rem;
+    
+    @media screen and (min-width: 820px){
+      display: grid;
+      grid-template-columns: minmax(min-content, 24rem) auto;
+      grid-template-areas: "filters nfts";
+      align-items: initial;
+    }
   }
 
   .nft-card-list{
@@ -21,6 +28,7 @@ const CollectionStyled = styled.div`
     gap: 1.25rem;
     padding-block-end: 5rem;
     grid-area: nfts;
+    justify-content: center;
   }
 
   

@@ -6,6 +6,12 @@ const SectionCardsStyled = styled.div`
   gap: 1.25rem;
   padding-block-start: 2.5rem;
   padding-block-end: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1224px){
+    flex-direction: row;
+  }
 
 `
 

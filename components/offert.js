@@ -49,6 +49,14 @@ const OffertStyled = styled.div`
   .buttons{
     display: flex;
     gap: .5rem;
+    flex-direction: column;
+
+  }
+
+  @media screen and (min-width: 474px){
+    .buttons{
+      flex-direction: row;
+    }
   }
 `
 

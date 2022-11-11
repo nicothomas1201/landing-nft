@@ -5,7 +5,6 @@ const BestNftsStyled = styled.div`
   display: flex;
   gap: .5rem;
   padding: 1rem;
-  /* justify-content: center; */
   align-items: center;
   color: var(--black);
   border-block-end: 1px solid var(--grey);

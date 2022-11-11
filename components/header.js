@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 import Button from './button'
+import { useEffect, useState } from 'react'
 
 const HeaderStyled = styled.div`
   display: flex;
@@ -15,11 +16,20 @@ const HeaderStyled = styled.div`
 `
 
 function Header() {
+  let [ show, setShow ] = useState(true)
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      let mediaQuerie = window.matchMedia('(min-width: 623px)')
+      setShow(mediaQuerie.matches)
+    }
+  }, [])
+
   return (
     <HeaderStyled>
       <Image src="/logo.png" alt="" width="48" height="48" />
       <div className="header-buttons">
-        <Button secondary>Inicia Sesion</Button>
+        { show ? <Button secondary>Inicia Sesion</Button> : null }
         <Button>Registrate</Button>
       </div>
     </HeaderStyled>

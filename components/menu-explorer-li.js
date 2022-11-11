@@ -8,6 +8,7 @@ const MenuExplorerLiStyled = styled.li`
   padding-block-end: .5rem;
   border-block-end: 1px solid transparent;
   cursor: pointer;
+  white-space: nowrap; 
   &.active{
     color: var(--black);
     border-block-end-color: var(--primary);

@@ -14,6 +14,7 @@ const CardStyled = styled.div`
   .details{
     text-align: center;
     color: var(--white);
+    padding-inline: .5rem;
     .title{
       margin: 0;
       font: var(--subtitle-22bold);

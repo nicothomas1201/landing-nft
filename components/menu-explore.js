@@ -9,7 +9,9 @@ const MenuExploreStyled = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   margin-block-start: 1.5rem;
+  overflow: auto;
 `
 
 function MenuExplore() {

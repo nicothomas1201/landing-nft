@@ -13,6 +13,8 @@ const CardCollectionStyled = styled.div`
   gap: 1rem;
   padding-block-end: 1rem;
   cursor: pointer;
+  /* border: 10px solid green; */
+  /* padding-block: .5rem; */
 
   .images{
     inline-size: 100%;

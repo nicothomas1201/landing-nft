@@ -6,14 +6,14 @@ import Link from 'next/link'
 const BannerStyled = styled.div`
   .bg{
     inline-size: 100%;
-    block-size: calc(100vh - 80px);
+    block-size: auto;
     background: url(/banner-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     /* max-inline-size: 75rem; */
-    padding: 0 5.1875rem;
+    padding: 0 1rem;
     box-sizing: border-box;
 
     .content{
@@ -21,6 +21,8 @@ const BannerStyled = styled.div`
       justify-content: space-between;
       align-items: center;
       flex: 1;
+      gap: 1.5rem;
+      flex-direction: column;
 
       .details-text{
         display: flex;
@@ -72,6 +74,16 @@ const BannerStyled = styled.div`
           }
         }
         
+      }
+    }
+  }
+
+  @media screen and (min-width: 1031px){
+    .bg{
+      block-size: calc(100vh - 80px);
+      padding: 0 5.1875rem;
+      .content{
+        flex-direction: row;
       }
     }
   }

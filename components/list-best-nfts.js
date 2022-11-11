@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import BestNfts from './best-nfts'
 
-const ListBestNftsStyled = styled.div`
+const ListBestNftsStyled = styled.div` 
+  /* display: flex; */
+  /* flex-direction: column; */
   padding-block-start: 2.5rem;
   padding-block-end: 2.5rem;
   
@@ -11,6 +13,7 @@ const ListBestNftsStyled = styled.div`
     grid-template-rows: repeat(5, max-content);
     column-gap: 1.25rem;
     row-gap: 1rem;
+    justify-content: center;
   }
 
   .title{

@@ -5,6 +5,8 @@ import Offert from './offert'
 const NftContentStyled = styled.div`
   margin-block-start: 4.0625rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1.625rem;
 
   .nft-image{
@@ -70,10 +72,15 @@ const NftContentStyled = styled.div`
     }
   }
 
+  @media screen and (min-width: 1193px){
+    flex-direction: row;
+  }
+
 `
 
 function NftContent({nft}) {
   let { imageUrl, likes, name, number, eth, description } = nft
+
   return (
     <NftContentStyled>
       <div className="nft-image">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SectionFilter from './section-filter'
 
 const FilterListStyled = styled.div`
-  max-inline-size: 24rem;
+  flex: 1;
   inline-size: 100%;
   grid-area: filters;
   padding: 1rem;
@@ -21,6 +21,10 @@ const FilterListStyled = styled.div`
     }
   }
 
+
+  @media screen and (min-width: 820px;){
+    max-inline-size: 24rem;
+  }
 `
 
 function FilterList() {

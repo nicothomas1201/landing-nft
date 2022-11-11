@@ -17,6 +17,7 @@ const MainExploreStyled = styled.main`
     gap: 1.25rem;
     padding-block-start: 2.5rem;
     padding-block-end: 5rem;
+    justify-content: center;
   }
 `
 
