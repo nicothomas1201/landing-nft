@@ -44,7 +44,7 @@ function Collection() {
         <div className='grid-container'>
           <FilterList />
           <div className='nft-card-list'>
-            {db.nfts.map((item, index) => {
+            {db.nfts.map( (item, index) => {
               return <NftCard 
                 image={item.imageUrl}
                 name={item.name}
@@ -52,6 +52,7 @@ function Collection() {
                 beforeEth={item.before_eth}
                 likes={item.likes}
                 number={item.number}
+                id={item.id}
                 key={index}/>
             })}
           </div>

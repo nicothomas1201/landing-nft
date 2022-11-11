@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const NftCardStyled = styled.div`
   display: flex;
@@ -8,6 +9,7 @@ const NftCardStyled = styled.div`
   border-radius: .75rem;
   overflow: hidden;
   border: 0.99px solid #71717133;
+  cursor: pointer;
 
 
   .nft-details{
@@ -71,32 +73,34 @@ const NftCardStyled = styled.div`
 
 `
 
-function NftCard({image, name, eth, beforeEth, likes, number}) {
+function NftCard({image, name, eth, beforeEth, likes, number, id}) {
   return (
-    <NftCardStyled>
-      <Image src={image} alt="" width="180" height="180" />
-      <div className='nft-details'>
-        <div className='card-section'>
-          <h4 className='name'>{name}</h4>
-          <h4 className='number'>{number}</h4>
+    <Link href={`../nft/${id}`}>
+      <NftCardStyled>
+        <Image src={image} alt="" width="180" height="180" />
+        <div className='nft-details'>
+          <div className='card-section'>
+            <h4 className='name'>{name}</h4>
+            <h4 className='number'>{number}</h4>
+          </div>
+          <div className='card-section end'>
+            <span className='top'>Top Bid</span>
+            <span className='eth'>
+              <Image src="/eth.svg" alt='' width={14} height={14} />
+              {eth}
+            </span>
+            <span className='before-eth'>Antes 
+              <Image src="/eth.svg" alt='' width={14} height={14} />
+              {beforeEth}
+            </span>
+          </div>
         </div>
-        <div className='card-section end'>
-          <span className='top'>Top Bid</span>
-          <span className='eth'>
-            <Image src="/eth.svg" alt='' width={14} height={14} />
-            {eth}
-          </span>
-          <span className='before-eth'>Antes 
-            <Image src="/eth.svg" alt='' width={14} height={14} />
-            {beforeEth}
-          </span>
-        </div>
-      </div>
-      <span className='likes'>
-        <Image src="/hearth.svg" alt="" width="13" height="13" />
-        {likes}
-      </span>
-    </NftCardStyled>
+        <span className='likes'>
+          <Image src="/hearth.svg" alt="" width="13" height="13" />
+          {likes}
+        </span>
+      </NftCardStyled>
+    </Link>
     
   )
 }
